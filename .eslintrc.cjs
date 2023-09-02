@@ -4,9 +4,9 @@ require('@rushstack/eslint-patch/modern-module-resolution')
 module.exports = {
   root: true,
   env: {
-    node: true,
+    node: true
   },
-  'extends': [
+  extends: [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     '@vue/eslint-config-typescript',
@@ -27,7 +27,7 @@ module.exports = {
     'vue/no-deprecated-scope-attribute': 'error',
     'vue/no-empty-pattern': 'error',
     'vue/object-curly-spacing': ['error', 'always'],
-    'vue/padding-line-between-blocks': 'error',
+    'vue/padding-line-between-blocks': 'error'
   },
   parserOptions: {
     ecmaVersion: 'latest'

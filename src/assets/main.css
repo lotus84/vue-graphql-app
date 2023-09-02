@@ -6,8 +6,9 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/manrope-v14-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2') format('woff2'),
-       url('./fonts/manrope-v14-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff') format('woff');
+  src:
+    url('./fonts/manrope-v14-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2') format('woff2'),
+    url('./fonts/manrope-v14-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff') format('woff');
 }
 
 /* manrope-600 - cyrillic_cyrillic-ext_latin_latin-ext */
@@ -16,6 +17,7 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
-  src: url('./fonts/manrope-v14-cyrillic_cyrillic-ext_latin_latin-ext-600.woff2') format('woff2'),
-       url('./fonts/manrope-v14-cyrillic_cyrillic-ext_latin_latin-ext-600.woff') format('woff');
+  src:
+    url('./fonts/manrope-v14-cyrillic_cyrillic-ext_latin_latin-ext-600.woff2') format('woff2'),
+    url('./fonts/manrope-v14-cyrillic_cyrillic-ext_latin_latin-ext-600.woff') format('woff');
 }
