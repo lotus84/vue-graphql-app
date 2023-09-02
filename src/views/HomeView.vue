@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import TheIndex from '@/components/TheIndex.vue';
 </script>
 
 <template>
-  <TheWelcome />
+  <TheIndex />
 </template>
