@@ -11,8 +11,6 @@ const links = ref([
     href: 'about',
   },
 ]);
-
-
 </script>
 
 <template>
