@@ -21,3 +21,8 @@
     url('./fonts/manrope-v14-cyrillic_cyrillic-ext_latin_latin-ext-600.woff2') format('woff2'),
     url('./fonts/manrope-v14-cyrillic_cyrillic-ext_latin_latin-ext-600.woff') format('woff');
 }
+
+.header-link-active {
+  color: #1bbf55;
+  cursor: default;
+}
