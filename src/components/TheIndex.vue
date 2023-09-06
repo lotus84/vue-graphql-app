@@ -3,6 +3,7 @@ import gql from 'graphql-tag';
 import { useQuery } from '@vue/apollo-composable';
 
 import TheIntro from '@/components/TheIntro.vue';
+import StatsInfo from '@/components/StatsInfo.vue';
 
 const { result } = useQuery(gql`
 query {
@@ -26,5 +27,6 @@ query {
 
 <template>
   <TheIntro />
+  <StatsInfo />
   <div>{{ result }}</div>
 </template>
