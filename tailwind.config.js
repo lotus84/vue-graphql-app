@@ -18,6 +18,7 @@ module.exports = {
       orange: '#FF9800',
       red: '#D63D2E',
       brown: '#756855',
+      purple: '#551BBF',
     }
   },
   plugins: [],

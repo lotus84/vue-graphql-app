@@ -4,7 +4,7 @@ import { useQuery } from '@vue/apollo-composable';
 import ContentContainer from '@/components/ContentContainer.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
 
-const { result } = useQuery(gql`
+const { result, loading } = useQuery(gql`
 query {
   characters {
     results {
@@ -32,10 +32,13 @@ query {
 </script>
 
 <template>
-  <div class="flex bg-white text-black w-full py-32 dark:bg-black2 dark:text-white">
+  <div v-if="loading" class="flex items-center justify-center w-full h-full py-16">
+    <p class="text-3xl font-semibold text-red">Идет загрузка...</p>
+  </div>
+  <div v-else class="flex bg-white text-black w-full py-32 dark:bg-black2 dark:text-white">
     <ContentContainer>
       <div class="grid grid-cols-2 gap-7 justify-items-center mx-auto">
-        <CharacterCard v-for="item in result?.characters.results" :key="item.id" :character="item" />
+        <CharacterCard v-for="item in result.characters.results" :key="item.id" :character="item" />
       </div>
     </ContentContainer>
   </div>
