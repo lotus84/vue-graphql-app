@@ -6,6 +6,9 @@ import ContentContainer from '@/components/ContentContainer.vue';
 const { result } = useQuery(gql`
 query {
   characters {
+    results {
+      id
+    }
     info {
       count
     }
